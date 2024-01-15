@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haisō Manga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        header .icons-container {
+            display: flex;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        header img {
+            height: 20px;
+        }
+
+        header::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('banner.jpg') center/cover no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section.banner {
+            position: relative;
+            background: url('banner.jpg') center/cover no-repeat;
+            height: 200px; /* Set the desired height for your banner */
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        section {
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .featured-manga {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+        }
+
+        .manga-item {
+            width: 30%;
+            margin-right: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .manga-item img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .manga-item h3,
+        .manga-item p {
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Haisō Manga</h1>
+        <div class="icons-container">
+            <a href="#user-profile">
+                <img src="user-icon.png" alt="User Profile">
+            </a>
+            <a href="#shopping-cart">
+                <img src="shopping-cart-icon.png" alt="Shopping Cart">
+            </a>
+        </div>
+    </header>
+
+    <section class="banner"></section>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#new-releases">New Releases</a>
+        <a href="#best-sellers">Best Sellers</a>
+    </nav>
+
+    <section>
+        <h2>Featured Manga</h2>
+        <div class="featured-manga">
+            <!-- Featured Manga 1 -->
+            <div class="manga-item">
+                <img src="opVol106.jpg" alt="opVol106">
+                <h3>OnePiece Vol. 106</h3>
+                <p>Price: $9.99</p>
+                <p>Creator: Eiichiro Oda</p>
+            </div>
+
+            <!-- Featured Manga 2 -->
+            <div class="manga-item">
+                <img src="zomVol1.jpg" alt="zomVol1">
+                <h3>Zom 100 Vol.1</h3>
+                <p>Price: $12.99</p>
+                <p>Creator: Kotaro Takata</p>
+            </div>
+
+            <!-- Featured Manga 3 -->
+            <div class="manga-item">
+                <img src="spyVol3.jpg" alt="spyVol3">
+                <h3>SpyxFamily Vol.3</h3>
+                <p>Price: $8.99</p>
+                <p>Creator: Tasuya Endo</p>
+            </div>
+
+            <!-- Featured Manga 4 -->
+            <div class="manga-item">
+                <img src="blVol24.jpg" alt="blVol24">
+                <h3>Blue Lock Vol.24</h3>
+                <p>Price: $10.99</p>
+                <p>Creator: Muneyuki Kaneshiro</p>
+            </div>
+
+            <!-- Featured Manga 5 -->
+            <div class="manga-item">
+                <img src="oshinoVol2.jpg" alt="oshinoVol2">
+                <h3>Oshi no Ko</h3>
+                <p>Price: $14.99</p>
+                <p>Creator: Takurō Iga</p>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#about-us">About Us</a>
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#social-media">Social Media</a>
+    </nav>
+
+    <footer>
+        &copy; 2024 Haisō Manga. All rights reserved.
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
